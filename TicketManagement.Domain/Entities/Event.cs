@@ -1,6 +1,7 @@
 ﻿using System;
 using TicketManagement.Domain.Common;
 
+
 namespace TicketManagement.Domain.Entities
 {
     class Event : AuditableEntity
