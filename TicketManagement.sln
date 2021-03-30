@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{22D12C1C-D94F-44EF-A5C2-3BA3B473B31C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketManagement.Domain", "TicketManagement.Domain\TicketManagement.Domain.csproj", "{0BFF3B06-CB87-4085-9659-BFC414A289E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketManagement.Domain", "TicketManagement.Domain\TicketManagement.Domain.csproj", "{0BFF3B06-CB87-4085-9659-BFC414A289E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketManagement.Application", "TicketManagement.Application\TicketManagement.Application.csproj", "{6E424E4B-1B0E-4105-BBAA-C6146493777E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0BFF3B06-CB87-4085-9659-BFC414A289E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BFF3B06-CB87-4085-9659-BFC414A289E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BFF3B06-CB87-4085-9659-BFC414A289E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E424E4B-1B0E-4105-BBAA-C6146493777E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E424E4B-1B0E-4105-BBAA-C6146493777E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E424E4B-1B0E-4105-BBAA-C6146493777E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E424E4B-1B0E-4105-BBAA-C6146493777E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{D4BD0B1C-F27B-4CA1-95D1-048CF3BE108A} = {2F77D084-4558-451C-9BB2-3815BD507F95}
 		{22D12C1C-D94F-44EF-A5C2-3BA3B473B31C} = {2F77D084-4558-451C-9BB2-3815BD507F95}
 		{0BFF3B06-CB87-4085-9659-BFC414A289E0} = {D80C2520-A675-4473-91E0-CB036791BB8A}
+		{6E424E4B-1B0E-4105-BBAA-C6146493777E} = {D80C2520-A675-4473-91E0-CB036791BB8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40FF546B-0709-4CF4-9A51-0909C02DD413}

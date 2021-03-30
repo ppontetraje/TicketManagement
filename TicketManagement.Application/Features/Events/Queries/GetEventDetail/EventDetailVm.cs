@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TicketManagement.Domain.Common;
 
-
-namespace TicketManagement.Domain.Entities
+namespace TicketManagement.Application.Features.Events.Queries.GetEventsList
 {
-    public class Event : AuditableEntity
+    public class EventDetailVm
     {
         public Guid EventId { get; set; }
         public string Name { get; set; }
@@ -16,6 +14,6 @@ namespace TicketManagement.Domain.Entities
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public Guid CategoryId { get; set; }
-        public Category Category { get; set; }
+        public CategoryDto Category { get; set; }
     }
 }

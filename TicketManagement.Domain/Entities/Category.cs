@@ -4,9 +4,9 @@ using System.Text;
 using TicketManagement.Domain.Common;
 using TicketManagement.Domain.Entities;
 
-namespace TicketManagement.Domain
+namespace TicketManagement.Domain.Entities
 {
-    class Category : AuditableEntity
+    public class Category : AuditableEntity
     {
         public Guid CategoryId { get; set; }
         public string Name { get; set; }

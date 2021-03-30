@@ -5,7 +5,7 @@ using TicketManagement.Domain.Common;
 
 namespace TicketManagement.Domain.Entities
 {
-    class Order : AuditableEntity
+    public class Order : AuditableEntity
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
