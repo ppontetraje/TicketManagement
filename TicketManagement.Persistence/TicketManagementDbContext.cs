@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TicketManagement.Domain.Common;
@@ -9,7 +7,7 @@ using TicketManagement.Domain.Entities;
 
 namespace TicketManagement.Persistence
 {
-    class TicketManagementDbContext: DbContext
+    public class TicketManagementDbContext: DbContext
     {
         public TicketManagementDbContext(DbContextOptions<TicketManagementDbContext> options)
            : base(options)

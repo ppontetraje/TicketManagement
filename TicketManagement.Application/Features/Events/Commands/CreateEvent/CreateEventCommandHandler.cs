@@ -40,7 +40,7 @@ namespace TicketManagement.Application.Features.Events.Commands.CreateEvent
             @event = await _eventRepository.AddAsync(@event);
 
             //Sending email notification to admin address
-            var email = new Email() { To = "gill@snowball.be", Body = $"A new event was created: {request}", Subject = "A new event was created" };
+            var email = new Email() { To = "pierfb94@gmail.com", Body = $"A new event was created: {request}", Subject = "A new event was created" };
 
             try
             {

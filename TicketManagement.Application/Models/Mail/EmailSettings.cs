@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TicketManagement.Application.Models.Mail
+﻿namespace TicketManagement.Application.Models.Mail
 {
-    class EmailSettings
+    public class EmailSettings
     {
         public string ApiKey { get; set; }
         public string FromAddress { get; set; }
