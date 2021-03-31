@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
+using TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents;
+using TicketManagement.Application.Features.Events.Commands.CreateEvent;
 using TicketManagement.Application.Features.Events.Queries.GetEventsList;
 using TicketManagement.Domain.Entities;
 
@@ -15,6 +15,9 @@ namespace TicketManagement.Application.Profiles
             CreateMap<Event, EventDetailVm>().ReverseMap();
 
             CreateMap<Category, CategoryDto>();
+            CreateMap<Category, CategoryListVm>();
+            CreateMap<Category, CategoryEventListVm>();
+            CreateMap<Event, CreateEventCommand>();
         }
     }
 }
