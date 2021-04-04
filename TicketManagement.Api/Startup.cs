@@ -32,7 +32,6 @@ namespace TicketManagement.Api
                 options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -50,6 +49,7 @@ namespace TicketManagement.Api
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
