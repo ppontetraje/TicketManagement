@@ -11,6 +11,9 @@ using TicketManagement.Application.Contracts;
 using TicketManagement.Infraestructure;
 using TicketManagement.Persistence;
 using System.Collections.Generic;
+using TicketManagement.Api.Middleware;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace TicketManagement.Api
 {
@@ -27,6 +30,7 @@ namespace TicketManagement.Api
         {
             AddSwagger(services);
 
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddPersistenceServices(Configuration);
@@ -102,6 +106,8 @@ namespace TicketManagement.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ticket Management API");
             });
 
+            app.UseCustomExceptionHandler();
+            
             app.UseCors("Open");
 
             app.UseAuthorization();
