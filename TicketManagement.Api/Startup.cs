@@ -30,7 +30,7 @@ namespace TicketManagement.Api
         {
             AddSwagger(services);
 
-            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddHttpContextAccessor();
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddPersistenceServices(Configuration);
