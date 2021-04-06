@@ -9,13 +9,14 @@ using TicketManagement.Application.Features.Events.Commands.CreateEvent;
 using TicketManagement.Application.Features.Events.Commands.DeleteEvent;
 using TicketManagement.Application.Features.Events.Commands.UpdateEvent;
 using TicketManagement.Application.Features.Events.Queries.GetEventsExport;
+using TicketManagement.Application.Features.Events.Queries.GetEventDetail;
 using TicketManagement.Application.Features.Events.Queries.GetEventsList;
 
 namespace TicketManagement.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EventsController : ControllerBase
+    public class EventsController : Controller
     {
 
         private readonly IMediator _mediator;

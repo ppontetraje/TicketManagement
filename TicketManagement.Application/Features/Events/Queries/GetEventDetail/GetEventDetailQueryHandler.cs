@@ -9,7 +9,7 @@ using TicketManagement.Application.Contracts.Persistence;
 using TicketManagement.Application.Exceptions;
 using TicketManagement.Domain.Entities;
 
-namespace TicketManagement.Application.Features.Events.Queries.GetEventsList
+namespace TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
     public class GetEventDetailQueryHandler : IRequestHandler<GetEventDetailQuery, EventDetailVm>
     {

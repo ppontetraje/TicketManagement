@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +10,7 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
 	  <PackageReference Include="FluentValidation" Version="9.5.2" />
 	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.5.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.13" />
 	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.13" />
 	  <PackageReference Include="System.Text.Json" Version="5.0.1" />
   </ItemGroup>

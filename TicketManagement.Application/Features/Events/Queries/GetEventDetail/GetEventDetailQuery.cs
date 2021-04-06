@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TicketManagement.Application.Features.Events.Queries.GetEventsList
+namespace TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
     public class GetEventDetailQuery : IRequest<EventDetailVm>
     {
