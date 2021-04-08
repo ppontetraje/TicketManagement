@@ -4,16 +4,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using TicketManagement.Api.Utility;
+using System.Collections.Generic;
+using TicketManagement.Api.Middleware;
 using TicketManagement.Api.Services;
+using TicketManagement.Api.Utility;
 using TicketManagement.Application;
 using TicketManagement.Application.Contracts;
 using TicketManagement.Infraestructure;
 using TicketManagement.Persistence;
-using System.Collections.Generic;
-using TicketManagement.Api.Middleware;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace TicketManagement.Api
 {
