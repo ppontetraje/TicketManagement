@@ -10,6 +10,7 @@ using TicketManagement.Api.Services;
 using TicketManagement.Api.Utility;
 using TicketManagement.Application;
 using TicketManagement.Application.Contracts;
+using TicketManagement.Identity;
 using TicketManagement.Infraestructure;
 using TicketManagement.Persistence;
 
@@ -27,11 +28,11 @@ namespace TicketManagement.Api
         public void ConfigureServices(IServiceCollection services)
         {
             AddSwagger(services);
-
             services.AddHttpContextAccessor();
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddPersistenceServices(Configuration);
+            services.AddIdentityServices(Configuration);
 
             services.AddScoped<ILoggedInUserService, LoggedInUserService>();
 

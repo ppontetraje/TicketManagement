@@ -1,9 +1,8 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 using TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
@@ -22,6 +21,7 @@ namespace TicketManagement.Api.Controllers
             _mediator = mediator;
         }
 
+        //[Authorize]
         [HttpGet("all", Name = "GetAllCategories")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<List<CategoryListVm>>> GetAllCategories()
@@ -30,6 +30,7 @@ namespace TicketManagement.Api.Controllers
             return Ok(dtos);
         }
 
+        [Authorize]
         [HttpGet("allwithevents", Name = "GetCategoriesWithEvents")]
         [ProducesDefaultResponseType]
         [ProducesResponseType(StatusCodes.Status200OK)]
